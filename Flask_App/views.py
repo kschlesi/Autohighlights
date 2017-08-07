@@ -24,9 +24,7 @@ with open(fname,'rb') as f:
 @app.route('/index')
 @app.route('/input')
 def url_input():
-    return render_template("input.html")#,
-       #title = 'Home', user = { 'nickname': 'Kim' },
-       #)
+    return render_template("input.html")
 
 @app.route('/output')
 def compute_output():
@@ -65,13 +63,12 @@ def switch_output():
     in_url = request.args.get('in_url')
     q_results_dict = request.args.get('q_results_dict')
     q_results_dict = literal_eval(q_results_dict)
-    #print(q[0]['title'])
     htext_dict = request.args.get('htext_dict')
     htext_dict = literal_eval(htext_dict)
     page_no = request.args.get('page_no')
-    #print(page_no)
     page_no = int(page_no)
 
+    # change dict order
     new_dict = {}
     new_dict[0] = htext_dict[page_no]
     new_dict[page_no] = htext_dict[0]
