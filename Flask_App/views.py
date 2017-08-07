@@ -10,6 +10,7 @@ from Flask_App import a_Model as mod
 from ast import literal_eval
 
 user = 'ubuntu' #add your username here (same as previous postgreSQL)                      
+#user = 'kimberly'
 host = 'localhost'
 dbname = 'medium'
 db = create_engine('postgres://%s%s/%s'%(user,host,dbname))
