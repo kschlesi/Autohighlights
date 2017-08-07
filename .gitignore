@@ -1,2 +1,3 @@
 Flask_App/__pycache__*
 ./Flask_App/__pycache__/*.pyc
+*.pkl
