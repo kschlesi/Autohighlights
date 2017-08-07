@@ -9,7 +9,7 @@ import pickle
 from Flask_App import a_Model as mod
 from ast import literal_eval
 
-user = 'postgres' #add your username here (same as previous postgreSQL)                      
+user = 'ubuntu' #add your username here (same as previous postgreSQL)                      
 host = 'localhost'
 dbname = 'medium'
 db = create_engine('postgres://%s%s/%s'%(user,host,dbname))
