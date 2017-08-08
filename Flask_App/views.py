@@ -17,6 +17,7 @@ db = create_engine('postgres://%s%s/%s'%(user,host,dbname))
 con = None
 con = psycopg2.connect(database = dbname, user = user)
 fname = ('./Flask_App/static/Models/rfm_model.pkl')
+ntop = 10
 with open(fname,'rb') as f:
    model = pickle.load(f)
 
@@ -52,7 +53,7 @@ def compute_output():
                 FROM (SELECT postid as apid FROM articles WHERE url='%s' ) AS a 
                 INNER JOIN sentences_sanal ON a.apid = sentences_sanal.postid;''' % in_url 
     Xtrain = pd.read_sql_query(xquery,con)
-    dfHrecList = mod.apply_model(Xtrain=Xtrain,model=model)
+    dfHrecList = mod.apply_model(Xtrain=Xtrain,model=model,ntop=ntop)
 
     # grab text of highlight sentences
     htext_dict = mod.get_htext(recdflist=dfHrecList,art_info=query_results[['postid','rawtext','origdb']])

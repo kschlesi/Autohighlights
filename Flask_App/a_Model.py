@@ -15,7 +15,7 @@ def apply_model(Xtrain = 'default', model= 'rfm', thresh = None, ntop=None):
 
     # grab highlights above threshold
     if ntop is not None:
-        Xpred = Xtest.sort_values('pred',ascending=False)
+        Xpred = Xtrain.sort_values('pred',ascending=False)
         Xorder = Xpred.iloc[0:ntop].sort_values('sposition')
     elif thresh is not None:
         Xorder = Xtrain[Xtrain.pred>thresh].sort_values('sposition')
@@ -63,7 +63,7 @@ def get_htext(recdflist=[],art_info=[]):
     # recdflist is a list of three dataframes, one per highlight
     # htext takes the raw sentences corresponding to the list of recommended positions,
     # and joins them into a single string, for each of the three recommendation dataframes
-    htext = ['. '.join(sents[0][list(df.sposition)]) for df in recdflist]
+    htext = ['. '.join([sents[0][i] for i in df.sposition]) for df in recdflist]
     #htext = [sents[0][spos] for spos in recdflist.sposition]
     htext_dict = dict(enumerate(htext))
     return htext_dict
