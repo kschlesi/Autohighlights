@@ -52,10 +52,10 @@ def compute_output():
                 FROM (SELECT postid as apid FROM articles WHERE url='%s' ) AS a 
                 INNER JOIN sentences_sanal ON a.apid = sentences_sanal.postid;''' % in_url 
     Xtrain = pd.read_sql_query(xquery,con)
-    dfHrec = mod.apply_model(Xtrain=Xtrain,model=model)
+    dfHrecList = mod.apply_model(Xtrain=Xtrain,model=model)
 
     # grab text of highlight sentences
-    htext_dict = mod.get_htext(recdf=dfHrec,art_info=query_results[['postid','rawtext','origdb']])
+    htext_dict = mod.get_htext(recdflist=dfHrecList,art_info=query_results[['postid','rawtext','origdb']])
 
     return render_template("output.html", q_results_dict = q_results_dict, htext_dict = htext_dict, in_url=in_url)
 
