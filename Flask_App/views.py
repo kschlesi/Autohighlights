@@ -9,8 +9,8 @@ import pickle
 from Flask_App import a_Model as mod
 from ast import literal_eval
 
-user = 'ubuntu' #add your username here (same as previous postgreSQL)                      
-#user = 'kimberly'
+#user = 'ubuntu' #add your username here (same as previous postgreSQL)                      
+user = 'kimberly'
 host = 'localhost'
 dbname = 'medium'
 db = create_engine('postgres://%s%s/%s'%(user,host,dbname))
@@ -28,6 +28,10 @@ def url_input():
     return render_template("input.html")#,
        #title = 'Home', user = { 'nickname': 'Kim' },
        #)
+
+@app.route('/input_1')
+def url_input_1():
+    return render_template("input_1.html")#,
 
 @app.route('/output')
 def compute_output():
