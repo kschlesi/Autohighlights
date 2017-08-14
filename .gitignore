@@ -1,4 +1,4 @@
-Flask_App/__pycache__*
 ./Flask_App/__pycache__/*.pyc
+*.pyc
 *.pkl
 ./Flask_App/static/Models/*.pkl
