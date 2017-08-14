@@ -9,15 +9,16 @@ import pickle
 from Flask_App import a_Model as mod
 from ast import literal_eval
 
-user = 'ubuntu' #add your username here (same as previous postgreSQL)                      
-#user = 'kimberly'
+#user = 'ubuntu' #add your username here (same as previous postgreSQL)                      
+user = 'kimberly'
 host = 'localhost'
 dbname = 'medium'
 db = create_engine('postgres://%s%s/%s'%(user,host,dbname))
 con = None
 con = psycopg2.connect(database = dbname, user = user)
 fname = ('./Flask_App/static/Models/rfm_model.pkl')
-ntop = 10
+ntop = 12
+demo_url = "https://medium.com/personal-growth/the-simple-way-i-overcame-my-writers-block-and-beat-procrastination-b4afa12eaae9"
 with open(fname,'rb') as f:
    model = pickle.load(f)
 
@@ -25,7 +26,7 @@ with open(fname,'rb') as f:
 @app.route('/index')
 @app.route('/input')
 def url_input():
-    return render_template("input.html")
+    return render_template("input.html",in_url="")
 
 @app.route('/output')
 def compute_output():
@@ -79,6 +80,10 @@ def switch_output():
         new_dict[1] = htext_dict[1]
 
     return render_template("output.html", q_results_dict = q_results_dict, htext_dict = new_dict, in_url=in_url)
+
+@app.route('/input_demo')
+def url_input_demo():
+    return render_template("input.html",in_url=demo_url)
 
 @app.route('/fbpost')
 def facebook_post():

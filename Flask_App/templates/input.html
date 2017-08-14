@@ -18,7 +18,7 @@
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet">
+   <link href="../static/css/starter-template.css" rel="stylesheet"> 
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -34,28 +34,47 @@
   <body>
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
-        </div><!--/.nav-collapse -->
+      <div><!--/.nav-collapse -->
+      
+      <h2 style="float:left;padding:0px 40px 0px 40px">
+        <a href="/input" style="color:#E2E8E7;text-decoration:none">
+              Auto<b style="color:#33FF99">Highlights</b></a></h2>
+
+      <a href="https://docs.google.com/presentation/d/12KeSvm4lQ03YmGpf7Yp0jHo-w7Z0iuD5dj1CFrUavfw/present#slide=id.g23f4f1ab1c_0_14">
+                <i class="glyphicon glyphicon-fast-forward" style="color:#444;padding:25px 20px 0px 0px;display:inline-block;float:right"></i>
+            </a>
+
+      <a href="https://docs.google.com/presentation/d/12KeSvm4lQ03YmGpf7Yp0jHo-w7Z0iuD5dj1CFrUavfw/present#slide=id.p">
+                <i class="glyphicon glyphicon-play" style="color:#444;padding:25px 20px 0px 0px;display:inline-block;float:right"></i>
+            </a>
+
+      <a href="/input_demo" style="color:#E2E8E7;padding:25px 20px 0px 0px;display:inline-block;float:right">
+                Demo
+            </a>
+
+      <a href="#" style="color:#E2E8E7;padding:25px 20px 0px 0px;display:inline-block;float:right">
+                Contact
+            </a>
+
+      <a href="#" style="color:#E2E8E7;padding:25px 20px 0px 0px;display:inline-block;float:right">
+                About
+            </a>
+                            
       </div>
     </nav>
-<br><br>
-    <div class="container">
 
-    <div class="starter-template">
-        <h2>AutoHighlights</h2>
-        <br><br>
-        <!--<p>Enter article information</p> -->
-    </div>
 
-    <div class = "container">
-
-      <form  action="/output" method="GET">
+    <div class = "container" style="text-align:center">
+    <br><br>
+      <form action="/output" method="GET">
         <div class="form-group">
-          <label for="in_url">Article URL:</label>
-          <input type="url" id="in_url" name='in_url' placeholder="www.medium.com/">
+          <h4>Start here: Enter article URL</h4>
+          <!-- <label for="in_url">Article URL:</label> -->
+          <input type="url" id="in_url" name='in_url' value="{{in_url}}"" placeholder="www.medium.com/">
         </div>
 
         <div>
-          <button type="submit" class="btn btn-lg btn-warning">Find Highlight!</button>
+          <button type="submit" class="btn btn-lg" style="background-color:#FFF176">Find Highlight!</button>
         </div>
 
       </form>
@@ -64,7 +83,6 @@
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="static/js/bootstrap.min.js"></script>
 
-  </div> <!-- /.container-->
 
 
     <!-- Bootstrap core JavaScript
