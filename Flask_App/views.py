@@ -11,6 +11,7 @@ from ast import literal_eval
 from twisted.internet import reactor
 from scrapy.crawler import CrawlerProcess, CrawlerRunner
 import scrapy
+from Flask_App import get_new_searches as gns
 #from scrapy import log, signals
 from scrapy.utils.log import configure_logging
 #from dmoz.spiders.dmoz_spiders import DmozSpider
@@ -67,7 +68,9 @@ def compute_output():
     
     # start scrapy spider 'url_text_spider' (puts info in new_searches table in medium db)
 
+
     # then search db, process text, calculate sentence information, construct Xtrain
+    Xtrain, title, username = gns.parse_new_search_data(in_url)
 
 # apply model, get htext....
     dfHrecList = mod.apply_model(Xtrain=Xtrain,model=model,ntop=ntop)
