@@ -8,9 +8,18 @@ import psycopg2
 import pickle
 from Flask_App import a_Model as mod
 from ast import literal_eval
+from twisted.internet import reactor
+from scrapy.crawler import CrawlerProcess, CrawlerRunner
+import scrapy
+#from scrapy import log, signals
+from scrapy.utils.log import configure_logging
+#from dmoz.spiders.dmoz_spiders import DmozSpider
+#from dmoz.spiders.bigbasketspider import BBSpider
+from scrapy.utils.project import get_project_settings
+from scrapy.settings import Settings
 
-user = 'ubuntu' #add your username here (same as previous postgreSQL)                      
-#user = 'kimberly'
+#user = 'ubuntu' #add your username here (same as previous postgreSQL)                      
+user = 'kimberly'
 host = 'localhost'
 dbname = 'medium'
 db = create_engine('postgres://%s%s/%s'%(user,host,dbname))
@@ -30,14 +39,15 @@ def url_input():
 
 @app.route('/output')
 def compute_output():
-    #pull 'in_url' from input field and store it
+#pull 'in_url' from input field and store it
     in_url = request.args.get('in_url')
     print(in_url)
+
+# try finding it in table....
+
     #just select the matching url from the articles table
     query = "SELECT postid, title, username, highlight, popdate, nlikes, rawtext, origdb FROM articles WHERE url='%s'" % in_url
-    #print(query)
     query_results=pd.read_sql_query(query,con)
-    #print(query_results)
     q_results_dict = []
     for i in range(0,query_results.shape[0]):
         q_results_dict.append(dict(title=query_results.iloc[i]['title'], 
@@ -52,11 +62,20 @@ def compute_output():
                 FROM (SELECT postid as apid FROM articles WHERE url='%s' ) AS a 
                 INNER JOIN sentences_sanal ON a.apid = sentences_sanal.postid;''' % in_url 
     Xtrain = pd.read_sql_query(xquery,con)
+
+# if not in table, auto-scrape and save info
+    
+    # start scrapy spider 'url_text_spider' (puts info in new_searches table in medium db)
+
+    # then search db, process text, calculate sentence information, construct Xtrain
+
+# apply model, get htext....
     dfHrecList = mod.apply_model(Xtrain=Xtrain,model=model,ntop=ntop)
 
     # grab text of highlight sentences
     htext_dict = mod.get_htext(recdflist=dfHrecList,art_info=query_results[['postid','rawtext','origdb']])
 
+# render output
     return render_template("output.html", q_results_dict = q_results_dict, htext_dict = htext_dict, in_url=in_url)
 
 @app.route('/output_alt')
