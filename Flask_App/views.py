@@ -7,7 +7,7 @@ import pandas as pd
 import psycopg2
 import pickle
 from Flask_App import a_Model as mod
-#from Flask_App import get_new_searches as gns
+from Flask_App import get_new_searches as gns
 from Flask_App import run_text_scraper as rts
 from ast import literal_eval
 
@@ -64,10 +64,7 @@ def compute_output():
         r = rts.run_text_scraper(in_url=in_url,user=user)
 
     # then search db, process text, calculate sentence information, construct Xtrain
-        #Xtrain, title, username = gns.parse_new_search_data(in_url)
-        Xtrain = []
-        title = []
-        username = []
+        Xtrain, title, username = gns.parse_new_search_data(in_url,con)
 
 # apply model, get htext....
     dfHrecList = mod.apply_model(Xtrain=Xtrain,model=model,ntop=ntop)

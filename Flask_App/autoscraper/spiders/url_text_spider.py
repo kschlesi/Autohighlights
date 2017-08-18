@@ -62,9 +62,9 @@ class URLTextSpider(scrapy.Spider):
                 username = None
 
         # organize info into dataframe
-        dfA = pd.DataFrame([self.the_url,text,title,username])
+        dfA = pd.DataFrame([self.the_url,username,title,text])
         dfA = dfA.T
-        dfA.columns = ['url', 'username', 'title', 'text']            
+        dfA.columns = ['url', 'username', 'title', 'rawtext']            
 
         # save info to csv
         filename = 'new_searches.txt'

@@ -340,3 +340,960 @@ INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 20:20:37] "GET /output?__debugger__=yes
 INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 20:20:37] "GET /output?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 20:20:37] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
 INFO:werkzeug: * Detected change in '/Users/kimberly/Documents/Insight/Autohighlights/Autohighlights/Flask_App/autoscraper/spiders/url_text_spider.py', reloading
+INFO:root:got line from subprocess: b'2017-08-18 07:37:38 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: autoscraper)\n'
+INFO:root:got line from subprocess: b"2017-08-18 07:37:38 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'autoscraper', 'NEWSPIDER_MODULE': 'autoscraper.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['autoscraper.spiders']}\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:37:38 [scrapy.middleware] INFO: Enabled extensions:\n'
+INFO:root:got line from subprocess: b"['scrapy.extensions.corestats.CoreStats',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.telnet.TelnetConsole',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.memusage.MemoryUsage',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.logstats.LogStats']\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:37:40 [scrapy.middleware] INFO: Enabled downloader middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.retry.RetryMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.stats.DownloaderStats']\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:37:40 [scrapy.middleware] INFO: Enabled spider middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.referer.RefererMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.depth.DepthMiddleware']\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:37:40 [scrapy.middleware] INFO: Enabled item pipelines:\n'
+INFO:root:got line from subprocess: b'[]\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:37:40 [scrapy.core.engine] INFO: Spider opened\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:37:40 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:37:40 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:37:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/robots.txt> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:37:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/personal-growth/the-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:37:43 [scrapy.core.engine] INFO: Closing spider (finished)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:37:43 [scrapy.statscollectors] INFO: Dumping Scrapy stats:\n'
+INFO:root:got line from subprocess: b"{'downloader/request_bytes': 553,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_method_count/GET': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_bytes': 30962,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_status_count/200': 2,\n"
+INFO:root:got line from subprocess: b" 'finish_reason': 'finished',\n"
+INFO:root:got line from subprocess: b" 'finish_time': datetime.datetime(2017, 8, 18, 14, 37, 43, 723957),\n"
+INFO:root:got line from subprocess: b" 'log_count/DEBUG': 3,\n"
+INFO:root:got line from subprocess: b" 'log_count/INFO': 7,\n"
+INFO:root:got line from subprocess: b" 'memusage/max': 91168768,\n"
+INFO:root:got line from subprocess: b" 'memusage/startup': 91168768,\n"
+INFO:root:got line from subprocess: b" 'response_received_count': 2,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'start_time': datetime.datetime(2017, 8, 18, 14, 37, 40, 226316)}\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:37:43 [scrapy.core.engine] INFO: Spider closed (finished)\n'
+INFO:root:got line from subprocess: b'Spider Initialized...\n'
+INFO:root:got line from subprocess: b'Got Article...\n'
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:37:44] "GET /output?in_url=https%3A%2F%2Fmedium.com%2Fpersonal-growth%2Fthe-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:37:44] "GET /output?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:37:44] "GET /output?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:37:44] "GET /output?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:37:44] "GET /output?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:37:46] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kimberly/Documents/Insight/Autohighlights/Autohighlights/Flask_App/views.py', reloading
+INFO:root:got line from subprocess: b'2017-08-18 07:39:18 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: autoscraper)\n'
+INFO:root:got line from subprocess: b"2017-08-18 07:39:18 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'autoscraper', 'NEWSPIDER_MODULE': 'autoscraper.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['autoscraper.spiders']}\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:39:18 [scrapy.middleware] INFO: Enabled extensions:\n'
+INFO:root:got line from subprocess: b"['scrapy.extensions.corestats.CoreStats',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.telnet.TelnetConsole',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.memusage.MemoryUsage',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.logstats.LogStats']\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:39:19 [scrapy.middleware] INFO: Enabled downloader middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.retry.RetryMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.stats.DownloaderStats']\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:39:19 [scrapy.middleware] INFO: Enabled spider middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.referer.RefererMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.depth.DepthMiddleware']\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:39:19 [scrapy.middleware] INFO: Enabled item pipelines:\n'
+INFO:root:got line from subprocess: b'[]\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:39:19 [scrapy.core.engine] INFO: Spider opened\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:39:19 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:39:19 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:39:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/robots.txt> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:39:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/personal-growth/the-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:39:20 [scrapy.core.engine] INFO: Closing spider (finished)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:39:20 [scrapy.statscollectors] INFO: Dumping Scrapy stats:\n'
+INFO:root:got line from subprocess: b"{'downloader/request_bytes': 553,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_method_count/GET': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_bytes': 30964,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_status_count/200': 2,\n"
+INFO:root:got line from subprocess: b" 'finish_reason': 'finished',\n"
+INFO:root:got line from subprocess: b" 'finish_time': datetime.datetime(2017, 8, 18, 14, 39, 20, 311459),\n"
+INFO:root:got line from subprocess: b" 'log_count/DEBUG': 3,\n"
+INFO:root:got line from subprocess: b" 'log_count/INFO': 7,\n"
+INFO:root:got line from subprocess: b" 'memusage/max': 91131904,\n"
+INFO:root:got line from subprocess: b" 'memusage/startup': 91131904,\n"
+INFO:root:got line from subprocess: b" 'response_received_count': 2,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'start_time': datetime.datetime(2017, 8, 18, 14, 39, 19, 158624)}\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:39:20 [scrapy.core.engine] INFO: Spider closed (finished)\n'
+INFO:root:got line from subprocess: b'Spider Initialized...\n'
+INFO:root:got line from subprocess: b'Got Article...\n'
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:39:20] "GET /output?in_url=https%3A%2F%2Fmedium.com%2Fpersonal-growth%2Fthe-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:39:20] "GET /output?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:39:20] "GET /output?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:39:20] "GET /output?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:39:20] "GET /output?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:39:20] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:39:21] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kimberly/Documents/Insight/Autohighlights/Autohighlights/Flask_App/views.py', reloading
+INFO:root:got line from subprocess: b'2017-08-18 07:41:54 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: autoscraper)\n'
+INFO:root:got line from subprocess: b"2017-08-18 07:41:54 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'autoscraper', 'NEWSPIDER_MODULE': 'autoscraper.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['autoscraper.spiders']}\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:41:54 [scrapy.middleware] INFO: Enabled extensions:\n'
+INFO:root:got line from subprocess: b"['scrapy.extensions.corestats.CoreStats',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.telnet.TelnetConsole',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.memusage.MemoryUsage',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.logstats.LogStats']\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:41:54 [scrapy.middleware] INFO: Enabled downloader middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.retry.RetryMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.stats.DownloaderStats']\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:41:54 [scrapy.middleware] INFO: Enabled spider middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.referer.RefererMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.depth.DepthMiddleware']\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:41:54 [scrapy.middleware] INFO: Enabled item pipelines:\n'
+INFO:root:got line from subprocess: b'[]\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:41:54 [scrapy.core.engine] INFO: Spider opened\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:41:55 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:41:55 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:41:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/robots.txt> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:41:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/personal-growth/the-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:41:56 [scrapy.core.engine] INFO: Closing spider (finished)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:41:56 [scrapy.statscollectors] INFO: Dumping Scrapy stats:\n'
+INFO:root:got line from subprocess: b"{'downloader/request_bytes': 553,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_method_count/GET': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_bytes': 30977,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_status_count/200': 2,\n"
+INFO:root:got line from subprocess: b" 'finish_reason': 'finished',\n"
+INFO:root:got line from subprocess: b" 'finish_time': datetime.datetime(2017, 8, 18, 14, 41, 56, 359326),\n"
+INFO:root:got line from subprocess: b" 'log_count/DEBUG': 3,\n"
+INFO:root:got line from subprocess: b" 'log_count/INFO': 7,\n"
+INFO:root:got line from subprocess: b" 'memusage/max': 91009024,\n"
+INFO:root:got line from subprocess: b" 'memusage/startup': 91009024,\n"
+INFO:root:got line from subprocess: b" 'response_received_count': 2,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'start_time': datetime.datetime(2017, 8, 18, 14, 41, 55, 63529)}\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:41:56 [scrapy.core.engine] INFO: Spider closed (finished)\n'
+INFO:root:got line from subprocess: b'Spider Initialized...\n'
+INFO:root:got line from subprocess: b'Got Article...\n'
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:41:56] "GET /output?in_url=https%3A%2F%2Fmedium.com%2Fpersonal-growth%2Fthe-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:41:56] "GET /output?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:41:56] "GET /output?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:41:56] "GET /output?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:41:56] "GET /output?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:41:57] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:41:57] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kimberly/Documents/Insight/Autohighlights/Autohighlights/Flask_App/get_new_searches.py', reloading
+INFO:root:got line from subprocess: b'2017-08-18 07:43:34 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: autoscraper)\n'
+INFO:root:got line from subprocess: b"2017-08-18 07:43:34 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'autoscraper', 'NEWSPIDER_MODULE': 'autoscraper.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['autoscraper.spiders']}\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:43:34 [scrapy.middleware] INFO: Enabled extensions:\n'
+INFO:root:got line from subprocess: b"['scrapy.extensions.corestats.CoreStats',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.telnet.TelnetConsole',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.memusage.MemoryUsage',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.logstats.LogStats']\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:43:35 [scrapy.middleware] INFO: Enabled downloader middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.retry.RetryMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.stats.DownloaderStats']\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:43:35 [scrapy.middleware] INFO: Enabled spider middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.referer.RefererMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.depth.DepthMiddleware']\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:43:35 [scrapy.middleware] INFO: Enabled item pipelines:\n'
+INFO:root:got line from subprocess: b'[]\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:43:35 [scrapy.core.engine] INFO: Spider opened\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:43:35 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:43:35 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:43:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/robots.txt> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:43:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/personal-growth/the-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:43:36 [scrapy.core.engine] INFO: Closing spider (finished)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:43:36 [scrapy.statscollectors] INFO: Dumping Scrapy stats:\n'
+INFO:root:got line from subprocess: b"{'downloader/request_bytes': 553,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_method_count/GET': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_bytes': 30984,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_status_count/200': 2,\n"
+INFO:root:got line from subprocess: b" 'finish_reason': 'finished',\n"
+INFO:root:got line from subprocess: b" 'finish_time': datetime.datetime(2017, 8, 18, 14, 43, 36, 570396),\n"
+INFO:root:got line from subprocess: b" 'log_count/DEBUG': 3,\n"
+INFO:root:got line from subprocess: b" 'log_count/INFO': 7,\n"
+INFO:root:got line from subprocess: b" 'memusage/max': 91492352,\n"
+INFO:root:got line from subprocess: b" 'memusage/startup': 91492352,\n"
+INFO:root:got line from subprocess: b" 'response_received_count': 2,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'start_time': datetime.datetime(2017, 8, 18, 14, 43, 35, 484972)}\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:43:36 [scrapy.core.engine] INFO: Spider closed (finished)\n'
+INFO:root:got line from subprocess: b'Spider Initialized...\n'
+INFO:root:got line from subprocess: b'Got Article...\n'
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:43:36] "GET /output?in_url=https%3A%2F%2Fmedium.com%2Fpersonal-growth%2Fthe-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:43:37] "GET /output?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:43:37] "GET /output?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:43:37] "GET /output?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:43:37] "GET /output?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:43:37] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:43:37] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kimberly/Documents/Insight/Autohighlights/Autohighlights/Flask_App/get_new_searches.py', reloading
+INFO:root:got line from subprocess: b'2017-08-18 07:45:36 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: autoscraper)\n'
+INFO:root:got line from subprocess: b"2017-08-18 07:45:36 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'autoscraper', 'NEWSPIDER_MODULE': 'autoscraper.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['autoscraper.spiders']}\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:45:36 [scrapy.middleware] INFO: Enabled extensions:\n'
+INFO:root:got line from subprocess: b"['scrapy.extensions.corestats.CoreStats',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.telnet.TelnetConsole',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.memusage.MemoryUsage',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.logstats.LogStats']\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:45:37 [scrapy.middleware] INFO: Enabled downloader middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.retry.RetryMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.stats.DownloaderStats']\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:45:37 [scrapy.middleware] INFO: Enabled spider middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.referer.RefererMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.depth.DepthMiddleware']\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:45:37 [scrapy.middleware] INFO: Enabled item pipelines:\n'
+INFO:root:got line from subprocess: b'[]\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:45:37 [scrapy.core.engine] INFO: Spider opened\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:45:37 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:45:37 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:45:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/robots.txt> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:45:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/personal-growth/the-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:45:38 [scrapy.core.engine] INFO: Closing spider (finished)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:45:38 [scrapy.statscollectors] INFO: Dumping Scrapy stats:\n'
+INFO:root:got line from subprocess: b"{'downloader/request_bytes': 553,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_method_count/GET': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_bytes': 30995,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_status_count/200': 2,\n"
+INFO:root:got line from subprocess: b" 'finish_reason': 'finished',\n"
+INFO:root:got line from subprocess: b" 'finish_time': datetime.datetime(2017, 8, 18, 14, 45, 38, 167293),\n"
+INFO:root:got line from subprocess: b" 'log_count/DEBUG': 3,\n"
+INFO:root:got line from subprocess: b" 'log_count/INFO': 7,\n"
+INFO:root:got line from subprocess: b" 'memusage/max': 91226112,\n"
+INFO:root:got line from subprocess: b" 'memusage/startup': 91226112,\n"
+INFO:root:got line from subprocess: b" 'response_received_count': 2,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'start_time': datetime.datetime(2017, 8, 18, 14, 45, 37, 164022)}\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:45:38 [scrapy.core.engine] INFO: Spider closed (finished)\n'
+INFO:root:got line from subprocess: b'Spider Initialized...\n'
+INFO:root:got line from subprocess: b'Got Article...\n'
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:45:38] "GET /output?in_url=https%3A%2F%2Fmedium.com%2Fpersonal-growth%2Fthe-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:45:38] "GET /output?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:45:38] "GET /output?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:45:38] "GET /output?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:45:38] "GET /output?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:45:39] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:45:39] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kimberly/Documents/Insight/Autohighlights/Autohighlights/Flask_App/get_new_searches.py', reloading
+INFO:root:got line from subprocess: b'2017-08-18 07:48:37 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: autoscraper)\n'
+INFO:root:got line from subprocess: b"2017-08-18 07:48:37 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'autoscraper', 'NEWSPIDER_MODULE': 'autoscraper.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['autoscraper.spiders']}\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:48:38 [scrapy.middleware] INFO: Enabled extensions:\n'
+INFO:root:got line from subprocess: b"['scrapy.extensions.corestats.CoreStats',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.telnet.TelnetConsole',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.memusage.MemoryUsage',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.logstats.LogStats']\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:48:38 [scrapy.middleware] INFO: Enabled downloader middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.retry.RetryMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.stats.DownloaderStats']\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:48:38 [scrapy.middleware] INFO: Enabled spider middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.referer.RefererMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.depth.DepthMiddleware']\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:48:38 [scrapy.middleware] INFO: Enabled item pipelines:\n'
+INFO:root:got line from subprocess: b'[]\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:48:38 [scrapy.core.engine] INFO: Spider opened\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:48:38 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:48:38 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:48:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/robots.txt> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:48:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/personal-growth/the-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:48:40 [scrapy.core.engine] INFO: Closing spider (finished)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:48:40 [scrapy.statscollectors] INFO: Dumping Scrapy stats:\n'
+INFO:root:got line from subprocess: b"{'downloader/request_bytes': 553,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_method_count/GET': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_bytes': 30954,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_status_count/200': 2,\n"
+INFO:root:got line from subprocess: b" 'finish_reason': 'finished',\n"
+INFO:root:got line from subprocess: b" 'finish_time': datetime.datetime(2017, 8, 18, 14, 48, 40, 56985),\n"
+INFO:root:got line from subprocess: b" 'log_count/DEBUG': 3,\n"
+INFO:root:got line from subprocess: b" 'log_count/INFO': 7,\n"
+INFO:root:got line from subprocess: b" 'memusage/max': 90324992,\n"
+INFO:root:got line from subprocess: b" 'memusage/startup': 90324992,\n"
+INFO:root:got line from subprocess: b" 'response_received_count': 2,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'start_time': datetime.datetime(2017, 8, 18, 14, 48, 38, 837709)}\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:48:40 [scrapy.core.engine] INFO: Spider closed (finished)\n'
+INFO:root:got line from subprocess: b'Spider Initialized...\n'
+INFO:root:got line from subprocess: b'Got Article...\n'
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:48:40] "GET /output?in_url=https%3A%2F%2Fmedium.com%2Fpersonal-growth%2Fthe-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:48:40] "GET /output?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:48:40] "GET /output?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:48:40] "GET /output?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:48:40] "GET /output?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:48:40] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:48:41] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kimberly/Documents/Insight/Autohighlights/Autohighlights/Flask_App/get_new_searches.py', reloading
+INFO:root:got line from subprocess: b'2017-08-18 07:51:38 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: autoscraper)\n'
+INFO:root:got line from subprocess: b"2017-08-18 07:51:38 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'autoscraper', 'NEWSPIDER_MODULE': 'autoscraper.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['autoscraper.spiders']}\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:51:39 [scrapy.middleware] INFO: Enabled extensions:\n'
+INFO:root:got line from subprocess: b"['scrapy.extensions.corestats.CoreStats',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.telnet.TelnetConsole',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.memusage.MemoryUsage',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.logstats.LogStats']\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:51:39 [scrapy.middleware] INFO: Enabled downloader middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.retry.RetryMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.stats.DownloaderStats']\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:51:39 [scrapy.middleware] INFO: Enabled spider middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.referer.RefererMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.depth.DepthMiddleware']\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:51:39 [scrapy.middleware] INFO: Enabled item pipelines:\n'
+INFO:root:got line from subprocess: b'[]\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:51:39 [scrapy.core.engine] INFO: Spider opened\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:51:39 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:51:39 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:51:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/robots.txt> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:51:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/personal-growth/the-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:51:41 [scrapy.core.engine] INFO: Closing spider (finished)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:51:41 [scrapy.statscollectors] INFO: Dumping Scrapy stats:\n'
+INFO:root:got line from subprocess: b"{'downloader/request_bytes': 553,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_method_count/GET': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_bytes': 30971,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_status_count/200': 2,\n"
+INFO:root:got line from subprocess: b" 'finish_reason': 'finished',\n"
+INFO:root:got line from subprocess: b" 'finish_time': datetime.datetime(2017, 8, 18, 14, 51, 41, 12393),\n"
+INFO:root:got line from subprocess: b" 'log_count/DEBUG': 3,\n"
+INFO:root:got line from subprocess: b" 'log_count/INFO': 7,\n"
+INFO:root:got line from subprocess: b" 'memusage/max': 91033600,\n"
+INFO:root:got line from subprocess: b" 'memusage/startup': 91033600,\n"
+INFO:root:got line from subprocess: b" 'response_received_count': 2,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'start_time': datetime.datetime(2017, 8, 18, 14, 51, 39, 755704)}\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:51:41 [scrapy.core.engine] INFO: Spider closed (finished)\n'
+INFO:root:got line from subprocess: b'Spider Initialized...\n'
+INFO:root:got line from subprocess: b'Got Article...\n'
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:51:41] "GET /output?in_url=https%3A%2F%2Fmedium.com%2Fpersonal-growth%2Fthe-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:51:41] "GET /output?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:51:41] "GET /output?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:51:41] "GET /output?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:51:41] "GET /output?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:51:42] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:51:42] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kimberly/Documents/Insight/Autohighlights/Autohighlights/Flask_App/get_new_searches.py', reloading
+INFO:root:got line from subprocess: b'2017-08-18 07:54:15 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: autoscraper)\n'
+INFO:root:got line from subprocess: b"2017-08-18 07:54:15 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'autoscraper', 'NEWSPIDER_MODULE': 'autoscraper.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['autoscraper.spiders']}\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:54:16 [scrapy.middleware] INFO: Enabled extensions:\n'
+INFO:root:got line from subprocess: b"['scrapy.extensions.corestats.CoreStats',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.telnet.TelnetConsole',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.memusage.MemoryUsage',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.logstats.LogStats']\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:54:16 [scrapy.middleware] INFO: Enabled downloader middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.retry.RetryMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.stats.DownloaderStats']\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:54:16 [scrapy.middleware] INFO: Enabled spider middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.referer.RefererMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.depth.DepthMiddleware']\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:54:16 [scrapy.middleware] INFO: Enabled item pipelines:\n'
+INFO:root:got line from subprocess: b'[]\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:54:16 [scrapy.core.engine] INFO: Spider opened\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:54:16 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:54:16 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:54:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/robots.txt> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:54:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/personal-growth/the-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:54:18 [scrapy.core.engine] INFO: Closing spider (finished)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:54:18 [scrapy.statscollectors] INFO: Dumping Scrapy stats:\n'
+INFO:root:got line from subprocess: b"{'downloader/request_bytes': 553,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_method_count/GET': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_bytes': 30972,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_status_count/200': 2,\n"
+INFO:root:got line from subprocess: b" 'finish_reason': 'finished',\n"
+INFO:root:got line from subprocess: b" 'finish_time': datetime.datetime(2017, 8, 18, 14, 54, 18, 555321),\n"
+INFO:root:got line from subprocess: b" 'log_count/DEBUG': 3,\n"
+INFO:root:got line from subprocess: b" 'log_count/INFO': 7,\n"
+INFO:root:got line from subprocess: b" 'memusage/max': 91123712,\n"
+INFO:root:got line from subprocess: b" 'memusage/startup': 91123712,\n"
+INFO:root:got line from subprocess: b" 'response_received_count': 2,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'start_time': datetime.datetime(2017, 8, 18, 14, 54, 16, 950295)}\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:54:18 [scrapy.core.engine] INFO: Spider closed (finished)\n'
+INFO:root:got line from subprocess: b'Spider Initialized...\n'
+INFO:root:got line from subprocess: b'Got Article...\n'
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:54:18] "GET /output?in_url=https%3A%2F%2Fmedium.com%2Fpersonal-growth%2Fthe-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:54:19] "GET /output?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:54:19] "GET /output?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:54:19] "GET /output?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:54:19] "GET /output?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:54:19] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:54:19] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kimberly/Documents/Insight/Autohighlights/Autohighlights/Flask_App/get_new_searches.py', reloading
+INFO:root:got line from subprocess: b'2017-08-18 07:57:33 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: autoscraper)\n'
+INFO:root:got line from subprocess: b"2017-08-18 07:57:33 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'autoscraper', 'NEWSPIDER_MODULE': 'autoscraper.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['autoscraper.spiders']}\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:57:34 [scrapy.middleware] INFO: Enabled extensions:\n'
+INFO:root:got line from subprocess: b"['scrapy.extensions.corestats.CoreStats',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.telnet.TelnetConsole',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.memusage.MemoryUsage',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.logstats.LogStats']\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:57:34 [scrapy.middleware] INFO: Enabled downloader middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.retry.RetryMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.stats.DownloaderStats']\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:57:34 [scrapy.middleware] INFO: Enabled spider middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.referer.RefererMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.depth.DepthMiddleware']\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:57:34 [scrapy.middleware] INFO: Enabled item pipelines:\n'
+INFO:root:got line from subprocess: b'[]\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:57:34 [scrapy.core.engine] INFO: Spider opened\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:57:35 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:57:35 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:57:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/robots.txt> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:57:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/personal-growth/the-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:57:36 [scrapy.core.engine] INFO: Closing spider (finished)\n'
+INFO:root:got line from subprocess: b'2017-08-18 07:57:36 [scrapy.statscollectors] INFO: Dumping Scrapy stats:\n'
+INFO:root:got line from subprocess: b"{'downloader/request_bytes': 553,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_method_count/GET': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_bytes': 30995,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_status_count/200': 2,\n"
+INFO:root:got line from subprocess: b" 'finish_reason': 'finished',\n"
+INFO:root:got line from subprocess: b" 'finish_time': datetime.datetime(2017, 8, 18, 14, 57, 36, 825067),\n"
+INFO:root:got line from subprocess: b" 'log_count/DEBUG': 3,\n"
+INFO:root:got line from subprocess: b" 'log_count/INFO': 7,\n"
+INFO:root:got line from subprocess: b" 'memusage/max': 91045888,\n"
+INFO:root:got line from subprocess: b" 'memusage/startup': 91045888,\n"
+INFO:root:got line from subprocess: b" 'response_received_count': 2,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'start_time': datetime.datetime(2017, 8, 18, 14, 57, 35, 14832)}\n"
+INFO:root:got line from subprocess: b'2017-08-18 07:57:36 [scrapy.core.engine] INFO: Spider closed (finished)\n'
+INFO:root:got line from subprocess: b'Spider Initialized...\n'
+INFO:root:got line from subprocess: b'Got Article...\n'
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:57:37] "GET /output?in_url=https%3A%2F%2Fmedium.com%2Fpersonal-growth%2Fthe-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:57:37] "GET /output?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:57:37] "GET /output?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:57:37] "GET /output?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:57:37] "GET /output?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:57:37] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 07:57:37] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kimberly/Documents/Insight/Autohighlights/Autohighlights/Flask_App/autoscraper/spiders/url_text_spider.py', reloading
+INFO:root:got line from subprocess: b'2017-08-18 08:00:16 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: autoscraper)\n'
+INFO:root:got line from subprocess: b"2017-08-18 08:00:16 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'autoscraper', 'NEWSPIDER_MODULE': 'autoscraper.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['autoscraper.spiders']}\n"
+INFO:root:got line from subprocess: b'2017-08-18 08:00:17 [scrapy.middleware] INFO: Enabled extensions:\n'
+INFO:root:got line from subprocess: b"['scrapy.extensions.corestats.CoreStats',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.telnet.TelnetConsole',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.memusage.MemoryUsage',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.logstats.LogStats']\n"
+INFO:root:got line from subprocess: b'2017-08-18 08:00:17 [scrapy.middleware] INFO: Enabled downloader middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.retry.RetryMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.stats.DownloaderStats']\n"
+INFO:root:got line from subprocess: b'2017-08-18 08:00:17 [scrapy.middleware] INFO: Enabled spider middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.referer.RefererMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.depth.DepthMiddleware']\n"
+INFO:root:got line from subprocess: b'2017-08-18 08:00:17 [scrapy.middleware] INFO: Enabled item pipelines:\n'
+INFO:root:got line from subprocess: b'[]\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:00:17 [scrapy.core.engine] INFO: Spider opened\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:00:17 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:00:17 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:00:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/robots.txt> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:00:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/personal-growth/the-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:00:19 [scrapy.core.engine] INFO: Closing spider (finished)\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:00:19 [scrapy.statscollectors] INFO: Dumping Scrapy stats:\n'
+INFO:root:got line from subprocess: b"{'downloader/request_bytes': 553,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_method_count/GET': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_bytes': 30961,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_status_count/200': 2,\n"
+INFO:root:got line from subprocess: b" 'finish_reason': 'finished',\n"
+INFO:root:got line from subprocess: b" 'finish_time': datetime.datetime(2017, 8, 18, 15, 0, 19, 316500),\n"
+INFO:root:got line from subprocess: b" 'log_count/DEBUG': 3,\n"
+INFO:root:got line from subprocess: b" 'log_count/INFO': 7,\n"
+INFO:root:got line from subprocess: b" 'memusage/max': 91295744,\n"
+INFO:root:got line from subprocess: b" 'memusage/startup': 91295744,\n"
+INFO:root:got line from subprocess: b" 'response_received_count': 2,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'start_time': datetime.datetime(2017, 8, 18, 15, 0, 17, 719962)}\n"
+INFO:root:got line from subprocess: b'2017-08-18 08:00:19 [scrapy.core.engine] INFO: Spider closed (finished)\n'
+INFO:root:got line from subprocess: b'Spider Initialized...\n'
+INFO:root:got line from subprocess: b'Got Article...\n'
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:00:19] "GET /output?in_url=https%3A%2F%2Fmedium.com%2Fpersonal-growth%2Fthe-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:00:19] "GET /output?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:00:19] "GET /output?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:00:19] "GET /output?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:00:19] "GET /output?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:00:20] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:00:20] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:root:got line from subprocess: b'2017-08-18 08:02:23 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: autoscraper)\n'
+INFO:root:got line from subprocess: b"2017-08-18 08:02:23 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'autoscraper', 'NEWSPIDER_MODULE': 'autoscraper.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['autoscraper.spiders']}\n"
+INFO:root:got line from subprocess: b'2017-08-18 08:02:23 [scrapy.middleware] INFO: Enabled extensions:\n'
+INFO:root:got line from subprocess: b"['scrapy.extensions.corestats.CoreStats',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.telnet.TelnetConsole',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.memusage.MemoryUsage',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.logstats.LogStats']\n"
+INFO:root:got line from subprocess: b'2017-08-18 08:02:24 [scrapy.middleware] INFO: Enabled downloader middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.retry.RetryMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.stats.DownloaderStats']\n"
+INFO:root:got line from subprocess: b'2017-08-18 08:02:24 [scrapy.middleware] INFO: Enabled spider middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.referer.RefererMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.depth.DepthMiddleware']\n"
+INFO:root:got line from subprocess: b'2017-08-18 08:02:24 [scrapy.middleware] INFO: Enabled item pipelines:\n'
+INFO:root:got line from subprocess: b'[]\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:02:24 [scrapy.core.engine] INFO: Spider opened\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:02:24 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:02:24 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:02:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/robots.txt> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:02:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/personal-growth/the-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:02:25 [scrapy.core.engine] INFO: Closing spider (finished)\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:02:25 [scrapy.statscollectors] INFO: Dumping Scrapy stats:\n'
+INFO:root:got line from subprocess: b"{'downloader/request_bytes': 553,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_method_count/GET': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_bytes': 31003,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_status_count/200': 2,\n"
+INFO:root:got line from subprocess: b" 'finish_reason': 'finished',\n"
+INFO:root:got line from subprocess: b" 'finish_time': datetime.datetime(2017, 8, 18, 15, 2, 25, 418880),\n"
+INFO:root:got line from subprocess: b" 'log_count/DEBUG': 3,\n"
+INFO:root:got line from subprocess: b" 'log_count/INFO': 7,\n"
+INFO:root:got line from subprocess: b" 'memusage/max': 91164672,\n"
+INFO:root:got line from subprocess: b" 'memusage/startup': 91164672,\n"
+INFO:root:got line from subprocess: b" 'response_received_count': 2,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'start_time': datetime.datetime(2017, 8, 18, 15, 2, 24, 315223)}\n"
+INFO:root:got line from subprocess: b'2017-08-18 08:02:25 [scrapy.core.engine] INFO: Spider closed (finished)\n'
+INFO:root:got line from subprocess: b'Spider Initialized...\n'
+INFO:root:got line from subprocess: b'Got Article...\n'
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:02:25] "GET /output?in_url=https%3A%2F%2Fmedium.com%2Fpersonal-growth%2Fthe-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:02:25] "GET /output?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:02:25] "GET /output?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:02:25] "GET /output?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:02:26] "GET /output?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:02:26] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:02:26] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kimberly/Documents/Insight/Autohighlights/Autohighlights/Flask_App/autoscraper/spiders/url_text_spider.py', reloading
+INFO:root:got line from subprocess: b'2017-08-18 08:03:54 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: autoscraper)\n'
+INFO:root:got line from subprocess: b"2017-08-18 08:03:54 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'autoscraper', 'NEWSPIDER_MODULE': 'autoscraper.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['autoscraper.spiders']}\n"
+INFO:root:got line from subprocess: b'2017-08-18 08:03:54 [scrapy.middleware] INFO: Enabled extensions:\n'
+INFO:root:got line from subprocess: b"['scrapy.extensions.corestats.CoreStats',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.telnet.TelnetConsole',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.memusage.MemoryUsage',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.logstats.LogStats']\n"
+INFO:root:got line from subprocess: b'2017-08-18 08:03:55 [scrapy.middleware] INFO: Enabled downloader middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.retry.RetryMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.stats.DownloaderStats']\n"
+INFO:root:got line from subprocess: b'2017-08-18 08:03:55 [scrapy.middleware] INFO: Enabled spider middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.referer.RefererMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.depth.DepthMiddleware']\n"
+INFO:root:got line from subprocess: b'2017-08-18 08:03:55 [scrapy.middleware] INFO: Enabled item pipelines:\n'
+INFO:root:got line from subprocess: b'[]\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:03:55 [scrapy.core.engine] INFO: Spider opened\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:03:55 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:03:55 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:03:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/robots.txt> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:03:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/personal-growth/the-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:03:56 [scrapy.core.engine] INFO: Closing spider (finished)\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:03:56 [scrapy.statscollectors] INFO: Dumping Scrapy stats:\n'
+INFO:root:got line from subprocess: b"{'downloader/request_bytes': 553,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_method_count/GET': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_bytes': 30981,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_status_count/200': 2,\n"
+INFO:root:got line from subprocess: b" 'finish_reason': 'finished',\n"
+INFO:root:got line from subprocess: b" 'finish_time': datetime.datetime(2017, 8, 18, 15, 3, 56, 531689),\n"
+INFO:root:got line from subprocess: b" 'log_count/DEBUG': 3,\n"
+INFO:root:got line from subprocess: b" 'log_count/INFO': 7,\n"
+INFO:root:got line from subprocess: b" 'memusage/max': 91172864,\n"
+INFO:root:got line from subprocess: b" 'memusage/startup': 91172864,\n"
+INFO:root:got line from subprocess: b" 'response_received_count': 2,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'start_time': datetime.datetime(2017, 8, 18, 15, 3, 55, 275993)}\n"
+INFO:root:got line from subprocess: b'2017-08-18 08:03:56 [scrapy.core.engine] INFO: Spider closed (finished)\n'
+INFO:root:got line from subprocess: b'Spider Initialized...\n'
+INFO:root:got line from subprocess: b'Got Article...\n'
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:03:56] "GET /output?in_url=https%3A%2F%2Fmedium.com%2Fpersonal-growth%2Fthe-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:03:57] "GET /output?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:03:57] "GET /output?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:03:57] "GET /output?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:03:57] "GET /output?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:03:57] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:03:57] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:root:got line from subprocess: b'2017-08-18 08:04:12 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: autoscraper)\n'
+INFO:root:got line from subprocess: b"2017-08-18 08:04:12 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'autoscraper', 'NEWSPIDER_MODULE': 'autoscraper.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['autoscraper.spiders']}\n"
+INFO:root:got line from subprocess: b'2017-08-18 08:04:13 [scrapy.middleware] INFO: Enabled extensions:\n'
+INFO:root:got line from subprocess: b"['scrapy.extensions.corestats.CoreStats',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.telnet.TelnetConsole',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.memusage.MemoryUsage',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.logstats.LogStats']\n"
+INFO:root:got line from subprocess: b'2017-08-18 08:04:13 [scrapy.middleware] INFO: Enabled downloader middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.retry.RetryMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.stats.DownloaderStats']\n"
+INFO:root:got line from subprocess: b'2017-08-18 08:04:13 [scrapy.middleware] INFO: Enabled spider middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.referer.RefererMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.depth.DepthMiddleware']\n"
+INFO:root:got line from subprocess: b'2017-08-18 08:04:13 [scrapy.middleware] INFO: Enabled item pipelines:\n'
+INFO:root:got line from subprocess: b'[]\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:04:13 [scrapy.core.engine] INFO: Spider opened\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:04:13 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:04:13 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:04:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/robots.txt> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:04:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/personal-growth/the-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:04:14 [scrapy.core.engine] INFO: Closing spider (finished)\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:04:14 [scrapy.statscollectors] INFO: Dumping Scrapy stats:\n'
+INFO:root:got line from subprocess: b"{'downloader/request_bytes': 553,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_method_count/GET': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_bytes': 30969,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_status_count/200': 2,\n"
+INFO:root:got line from subprocess: b" 'finish_reason': 'finished',\n"
+INFO:root:got line from subprocess: b" 'finish_time': datetime.datetime(2017, 8, 18, 15, 4, 14, 664305),\n"
+INFO:root:got line from subprocess: b" 'log_count/DEBUG': 3,\n"
+INFO:root:got line from subprocess: b" 'log_count/INFO': 7,\n"
+INFO:root:got line from subprocess: b" 'memusage/max': 91107328,\n"
+INFO:root:got line from subprocess: b" 'memusage/startup': 91107328,\n"
+INFO:root:got line from subprocess: b" 'response_received_count': 2,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'start_time': datetime.datetime(2017, 8, 18, 15, 4, 13, 678190)}\n"
+INFO:root:got line from subprocess: b'2017-08-18 08:04:14 [scrapy.core.engine] INFO: Spider closed (finished)\n'
+INFO:root:got line from subprocess: b'Spider Initialized...\n'
+INFO:root:got line from subprocess: b'Got Article...\n'
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:04:15] "GET /output?in_url=https%3A%2F%2Fmedium.com%2Fpersonal-growth%2Fthe-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:04:15] "GET /output?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:04:15] "GET /output?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:04:15] "GET /output?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:04:15] "GET /output?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:04:15] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:04:15] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kimberly/Documents/Insight/Autohighlights/Autohighlights/Flask_App/get_new_searches.py', reloading
+INFO:root:got line from subprocess: b'2017-08-18 08:34:02 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: autoscraper)\n'
+INFO:root:got line from subprocess: b"2017-08-18 08:34:02 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'autoscraper', 'NEWSPIDER_MODULE': 'autoscraper.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['autoscraper.spiders']}\n"
+INFO:root:got line from subprocess: b'2017-08-18 08:34:02 [scrapy.middleware] INFO: Enabled extensions:\n'
+INFO:root:got line from subprocess: b"['scrapy.extensions.corestats.CoreStats',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.telnet.TelnetConsole',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.memusage.MemoryUsage',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.logstats.LogStats']\n"
+INFO:root:got line from subprocess: b'2017-08-18 08:34:03 [scrapy.middleware] INFO: Enabled downloader middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.retry.RetryMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.stats.DownloaderStats']\n"
+INFO:root:got line from subprocess: b'2017-08-18 08:34:03 [scrapy.middleware] INFO: Enabled spider middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.referer.RefererMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.depth.DepthMiddleware']\n"
+INFO:root:got line from subprocess: b'2017-08-18 08:34:03 [scrapy.middleware] INFO: Enabled item pipelines:\n'
+INFO:root:got line from subprocess: b'[]\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:34:03 [scrapy.core.engine] INFO: Spider opened\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:34:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:34:03 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:34:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/robots.txt> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:34:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/personal-growth/the-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:34:04 [scrapy.core.engine] INFO: Closing spider (finished)\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:34:04 [scrapy.statscollectors] INFO: Dumping Scrapy stats:\n'
+INFO:root:got line from subprocess: b"{'downloader/request_bytes': 553,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_method_count/GET': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_bytes': 30976,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_status_count/200': 2,\n"
+INFO:root:got line from subprocess: b" 'finish_reason': 'finished',\n"
+INFO:root:got line from subprocess: b" 'finish_time': datetime.datetime(2017, 8, 18, 15, 34, 4, 785842),\n"
+INFO:root:got line from subprocess: b" 'log_count/DEBUG': 3,\n"
+INFO:root:got line from subprocess: b" 'log_count/INFO': 7,\n"
+INFO:root:got line from subprocess: b" 'memusage/max': 91058176,\n"
+INFO:root:got line from subprocess: b" 'memusage/startup': 91058176,\n"
+INFO:root:got line from subprocess: b" 'response_received_count': 2,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'start_time': datetime.datetime(2017, 8, 18, 15, 34, 3, 293361)}\n"
+INFO:root:got line from subprocess: b'2017-08-18 08:34:04 [scrapy.core.engine] INFO: Spider closed (finished)\n'
+INFO:root:got line from subprocess: b'Spider Initialized...\n'
+INFO:root:got line from subprocess: b'Got Article...\n'
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:34:05] "GET /output?in_url=https%3A%2F%2Fmedium.com%2Fpersonal-growth%2Fthe-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:34:05] "GET /output?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:34:05] "GET /output?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:34:05] "GET /output?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:34:05] "GET /output?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:34:05] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:34:06] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kimberly/Documents/Insight/Autohighlights/Autohighlights/Flask_App/get_new_searches.py', reloading
+INFO:root:got line from subprocess: b'2017-08-18 08:38:56 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: autoscraper)\n'
+INFO:root:got line from subprocess: b"2017-08-18 08:38:56 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'autoscraper', 'NEWSPIDER_MODULE': 'autoscraper.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['autoscraper.spiders']}\n"
+INFO:root:got line from subprocess: b'2017-08-18 08:38:57 [scrapy.middleware] INFO: Enabled extensions:\n'
+INFO:root:got line from subprocess: b"['scrapy.extensions.corestats.CoreStats',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.telnet.TelnetConsole',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.memusage.MemoryUsage',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.logstats.LogStats']\n"
+INFO:root:got line from subprocess: b'2017-08-18 08:38:57 [scrapy.middleware] INFO: Enabled downloader middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.retry.RetryMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.stats.DownloaderStats']\n"
+INFO:root:got line from subprocess: b'2017-08-18 08:38:57 [scrapy.middleware] INFO: Enabled spider middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.referer.RefererMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.depth.DepthMiddleware']\n"
+INFO:root:got line from subprocess: b'2017-08-18 08:38:57 [scrapy.middleware] INFO: Enabled item pipelines:\n'
+INFO:root:got line from subprocess: b'[]\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:38:57 [scrapy.core.engine] INFO: Spider opened\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:38:58 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:38:58 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:38:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/robots.txt> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:38:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/personal-growth/the-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:38:59 [scrapy.core.engine] INFO: Closing spider (finished)\n'
+INFO:root:got line from subprocess: b'2017-08-18 08:38:59 [scrapy.statscollectors] INFO: Dumping Scrapy stats:\n'
+INFO:root:got line from subprocess: b"{'downloader/request_bytes': 553,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_method_count/GET': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_bytes': 30974,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_status_count/200': 2,\n"
+INFO:root:got line from subprocess: b" 'finish_reason': 'finished',\n"
+INFO:root:got line from subprocess: b" 'finish_time': datetime.datetime(2017, 8, 18, 15, 38, 59, 519623),\n"
+INFO:root:got line from subprocess: b" 'log_count/DEBUG': 3,\n"
+INFO:root:got line from subprocess: b" 'log_count/INFO': 7,\n"
+INFO:root:got line from subprocess: b" 'memusage/max': 90439680,\n"
+INFO:root:got line from subprocess: b" 'memusage/startup': 90439680,\n"
+INFO:root:got line from subprocess: b" 'response_received_count': 2,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'start_time': datetime.datetime(2017, 8, 18, 15, 38, 58, 55876)}\n"
+INFO:root:got line from subprocess: b'2017-08-18 08:38:59 [scrapy.core.engine] INFO: Spider closed (finished)\n'
+INFO:root:got line from subprocess: b'Spider Initialized...\n'
+INFO:root:got line from subprocess: b'Got Article...\n'
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:38:59] "GET /output?in_url=https%3A%2F%2Fmedium.com%2Fpersonal-growth%2Fthe-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:39:00] "GET /output?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:39:00] "GET /output?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:39:00] "GET /output?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:39:00] "GET /output?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:39:00] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Aug/2017 08:39:00] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kimberly/Documents/Insight/Autohighlights/Autohighlights/Flask_App/get_new_searches.py', reloading
