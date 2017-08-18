@@ -1,0 +1,342 @@
+INFO:root:got line from subprocess: b'Scrapy 1.4.0 - no active project\n'
+INFO:root:got line from subprocess: b'\n'
+INFO:root:got line from subprocess: b'Unknown command: crawl\n'
+INFO:root:got line from subprocess: b'\n'
+INFO:root:got line from subprocess: b'Use "scrapy" to see available commands\n'
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 19:47:28] "GET /output?in_url=https%3A%2F%2Fmedium.com%2Fpersonal-growth%2Fthe-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 19:47:28] "GET /output?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 19:47:28] "GET /output?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 19:47:28] "GET /output?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 19:47:28] "GET /output?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 19:47:28] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kimberly/Documents/Insight/Autohighlights/Autohighlights/Flask_App/run_text_scraper.py', reloading
+INFO:root:got line from subprocess: b'Scrapy 1.4.0 - no active project\n'
+INFO:root:got line from subprocess: b'\n'
+INFO:root:got line from subprocess: b'Unknown command: crawl\n'
+INFO:root:got line from subprocess: b'\n'
+INFO:root:got line from subprocess: b'Use "scrapy" to see available commands\n'
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 19:51:16] "GET /output?in_url=https%3A%2F%2Fmedium.com%2Fpersonal-growth%2Fthe-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 19:51:16] "GET /output?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 19:51:16] "GET /output?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 19:51:16] "GET /output?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 19:51:16] "GET /output?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 19:51:16] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kimberly/Documents/Insight/Autohighlights/Autohighlights/Flask_App/run_text_scraper.py', reloading
+INFO:root:got line from subprocess: b'2017-08-17 20:02:56 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: autoscraper)\n'
+INFO:root:got line from subprocess: b"2017-08-17 20:02:56 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'autoscraper', 'NEWSPIDER_MODULE': 'autoscraper.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['autoscraper.spiders']}\n"
+INFO:root:got line from subprocess: b'2017-08-17 20:02:56 [scrapy.middleware] INFO: Enabled extensions:\n'
+INFO:root:got line from subprocess: b"['scrapy.extensions.corestats.CoreStats',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.telnet.TelnetConsole',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.memusage.MemoryUsage',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.logstats.LogStats']\n"
+INFO:root:got line from subprocess: b'Unhandled error in Deferred:\n'
+INFO:root:got line from subprocess: b'2017-08-17 20:02:57 [twisted] CRITICAL: Unhandled error in Deferred:\n'
+INFO:root:got line from subprocess: b'\n'
+INFO:root:got line from subprocess: b'2017-08-17 20:02:57 [twisted] CRITICAL: \n'
+INFO:root:got line from subprocess: b'Traceback (most recent call last):\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1122, in _do_get\n'
+INFO:root:got line from subprocess: b'    return self._pool.get(wait, self._timeout)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/util/queue.py", line 145, in get\n'
+INFO:root:got line from subprocess: b'    raise Empty\n'
+INFO:root:got line from subprocess: b'sqlalchemy.util.queue.Empty\n'
+INFO:root:got line from subprocess: b'\n'
+INFO:root:got line from subprocess: b'During handling of the above exception, another exception occurred:\n'
+INFO:root:got line from subprocess: b'\n'
+INFO:root:got line from subprocess: b'Traceback (most recent call last):\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2147, in _wrap_pool_connect\n'
+INFO:root:got line from subprocess: b'    return fn()\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/pool.py", line 387, in connect\n'
+INFO:root:got line from subprocess: b'    return _ConnectionFairy._checkout(self)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/pool.py", line 766, in _checkout\n'
+INFO:root:got line from subprocess: b'    fairy = _ConnectionRecord.checkout(pool)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/pool.py", line 516, in checkout\n'
+INFO:root:got line from subprocess: b'    rec = pool._do_get()\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1138, in _do_get\n'
+INFO:root:got line from subprocess: b'    self._dec_overflow()\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__\n'
+INFO:root:got line from subprocess: b'    compat.reraise(exc_type, exc_value, exc_tb)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 187, in reraise\n'
+INFO:root:got line from subprocess: b'    raise value\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1135, in _do_get\n'
+INFO:root:got line from subprocess: b'    return self._create_connection()\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/pool.py", line 333, in _create_connection\n'
+INFO:root:got line from subprocess: b'    return _ConnectionRecord(self)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/pool.py", line 461, in __init__\n'
+INFO:root:got line from subprocess: b'    self.__connect(first_connect_check=True)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/pool.py", line 651, in __connect\n'
+INFO:root:got line from subprocess: b'    connection = pool._invoke_creator(self)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 105, in connect\n'
+INFO:root:got line from subprocess: b'    return dialect.connect(*cargs, **cparams)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 393, in connect\n'
+INFO:root:got line from subprocess: b'    return self.dbapi.connect(*cargs, **cparams)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/psycopg2/__init__.py", line 130, in connect\n'
+INFO:root:got line from subprocess: b'    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\n'
+INFO:root:got line from subprocess: b'psycopg2.OperationalError: FATAL:  role ""kimberly"" does not exist\n'
+INFO:root:got line from subprocess: b'\n'
+INFO:root:got line from subprocess: b'\n'
+INFO:root:got line from subprocess: b'The above exception was the direct cause of the following exception:\n'
+INFO:root:got line from subprocess: b'\n'
+INFO:root:got line from subprocess: b'Traceback (most recent call last):\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/twisted/internet/defer.py", line 1386, in _inlineCallbacks\n'
+INFO:root:got line from subprocess: b'    result = g.send(result)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/scrapy/crawler.py", line 76, in crawl\n'
+INFO:root:got line from subprocess: b'    self.spider = self._create_spider(*args, **kwargs)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/scrapy/crawler.py", line 99, in _create_spider\n'
+INFO:root:got line from subprocess: b'    return self.spidercls.from_crawler(self, *args, **kwargs)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/scrapy/spiders/__init__.py", line 51, in from_crawler\n'
+INFO:root:got line from subprocess: b'    spider = cls(*args, **kwargs)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/Documents/Insight/Autohighlights/Autohighlights/Flask_App/autoscraper/spiders/url_text_spider.py", line 28, in __init__\n'
+INFO:root:got line from subprocess: b'    if not database_exists(self.engine.url):\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy_utils/functions/database.py", line 465, in database_exists\n'
+INFO:root:got line from subprocess: b'    return bool(engine.execute(text).scalar())\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2063, in execute\n'
+INFO:root:got line from subprocess: b'    connection = self.contextual_connect(close_with_result=True)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2112, in contextual_connect\n'
+INFO:root:got line from subprocess: b'    self._wrap_pool_connect(self.pool.connect, None),\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2151, in _wrap_pool_connect\n'
+INFO:root:got line from subprocess: b'    e, dialect, self)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1465, in _handle_dbapi_exception_noconnection\n'
+INFO:root:got line from subprocess: b'    exc_info\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause\n'
+INFO:root:got line from subprocess: b'    reraise(type(exception), exception, tb=exc_tb, cause=cause)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 186, in reraise\n'
+INFO:root:got line from subprocess: b'    raise value.with_traceback(tb)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2147, in _wrap_pool_connect\n'
+INFO:root:got line from subprocess: b'    return fn()\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/pool.py", line 387, in connect\n'
+INFO:root:got line from subprocess: b'    return _ConnectionFairy._checkout(self)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/pool.py", line 766, in _checkout\n'
+INFO:root:got line from subprocess: b'    fairy = _ConnectionRecord.checkout(pool)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/pool.py", line 516, in checkout\n'
+INFO:root:got line from subprocess: b'    rec = pool._do_get()\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1138, in _do_get\n'
+INFO:root:got line from subprocess: b'    self._dec_overflow()\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 66, in __exit__\n'
+INFO:root:got line from subprocess: b'    compat.reraise(exc_type, exc_value, exc_tb)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 187, in reraise\n'
+INFO:root:got line from subprocess: b'    raise value\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/pool.py", line 1135, in _do_get\n'
+INFO:root:got line from subprocess: b'    return self._create_connection()\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/pool.py", line 333, in _create_connection\n'
+INFO:root:got line from subprocess: b'    return _ConnectionRecord(self)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/pool.py", line 461, in __init__\n'
+INFO:root:got line from subprocess: b'    self.__connect(first_connect_check=True)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/pool.py", line 651, in __connect\n'
+INFO:root:got line from subprocess: b'    connection = pool._invoke_creator(self)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/engine/strategies.py", line 105, in connect\n'
+INFO:root:got line from subprocess: b'    return dialect.connect(*cargs, **cparams)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 393, in connect\n'
+INFO:root:got line from subprocess: b'    return self.dbapi.connect(*cargs, **cparams)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/psycopg2/__init__.py", line 130, in connect\n'
+INFO:root:got line from subprocess: b'    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)\n'
+INFO:root:got line from subprocess: b'sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) FATAL:  role ""kimberly"" does not exist\n'
+INFO:root:got line from subprocess: b'\n'
+INFO:root:got line from subprocess: b'Spider Initialized...\n'
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 20:02:57] "GET /output?in_url=https%3A%2F%2Fmedium.com%2Fpersonal-growth%2Fthe-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 20:02:57] "GET /output?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 20:02:57] "GET /output?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 20:02:57] "GET /output?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 20:02:57] "GET /output?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 20:02:57] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kimberly/Documents/Insight/Autohighlights/Autohighlights/Flask_App/run_text_scraper.py', reloading
+INFO:root:got line from subprocess: b'2017-08-17 20:13:39 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: autoscraper)\n'
+INFO:root:got line from subprocess: b"2017-08-17 20:13:39 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'autoscraper', 'NEWSPIDER_MODULE': 'autoscraper.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['autoscraper.spiders']}\n"
+INFO:root:got line from subprocess: b'2017-08-17 20:13:39 [scrapy.middleware] INFO: Enabled extensions:\n'
+INFO:root:got line from subprocess: b"['scrapy.extensions.corestats.CoreStats',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.telnet.TelnetConsole',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.memusage.MemoryUsage',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.logstats.LogStats']\n"
+INFO:root:got line from subprocess: b'Unhandled error in Deferred:\n'
+INFO:root:got line from subprocess: b'2017-08-17 20:13:40 [twisted] CRITICAL: Unhandled error in Deferred:\n'
+INFO:root:got line from subprocess: b'\n'
+INFO:root:got line from subprocess: b'2017-08-17 20:13:40 [twisted] CRITICAL: \n'
+INFO:root:got line from subprocess: b'Traceback (most recent call last):\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1182, in _execute_context\n'
+INFO:root:got line from subprocess: b'    context)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 470, in do_execute\n'
+INFO:root:got line from subprocess: b'    cursor.execute(statement, parameters)\n'
+INFO:root:got line from subprocess: b'psycopg2.ProgrammingError: syntax error at or near "medium"\n'
+INFO:root:got line from subprocess: b"LINE 1: SELECT 1 FROM pg_database WHERE datname=''medium''\n"
+INFO:root:got line from subprocess: b'                                                  ^\n'
+INFO:root:got line from subprocess: b'\n'
+INFO:root:got line from subprocess: b'\n'
+INFO:root:got line from subprocess: b'The above exception was the direct cause of the following exception:\n'
+INFO:root:got line from subprocess: b'\n'
+INFO:root:got line from subprocess: b'Traceback (most recent call last):\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/twisted/internet/defer.py", line 1386, in _inlineCallbacks\n'
+INFO:root:got line from subprocess: b'    result = g.send(result)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/scrapy/crawler.py", line 76, in crawl\n'
+INFO:root:got line from subprocess: b'    self.spider = self._create_spider(*args, **kwargs)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/scrapy/crawler.py", line 99, in _create_spider\n'
+INFO:root:got line from subprocess: b'    return self.spidercls.from_crawler(self, *args, **kwargs)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/scrapy/spiders/__init__.py", line 51, in from_crawler\n'
+INFO:root:got line from subprocess: b'    spider = cls(*args, **kwargs)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/Documents/Insight/Autohighlights/Autohighlights/Flask_App/autoscraper/spiders/url_text_spider.py", line 28, in __init__\n'
+INFO:root:got line from subprocess: b'    if not database_exists(self.engine.url):\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy_utils/functions/database.py", line 465, in database_exists\n'
+INFO:root:got line from subprocess: b'    return bool(engine.execute(text).scalar())\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 2064, in execute\n'
+INFO:root:got line from subprocess: b'    return connection.execute(statement, *multiparams, **params)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 939, in execute\n'
+INFO:root:got line from subprocess: b'    return self._execute_text(object, multiparams, params)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1097, in _execute_text\n'
+INFO:root:got line from subprocess: b'    statement, parameters\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1189, in _execute_context\n'
+INFO:root:got line from subprocess: b'    context)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1402, in _handle_dbapi_exception\n'
+INFO:root:got line from subprocess: b'    exc_info\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 203, in raise_from_cause\n'
+INFO:root:got line from subprocess: b'    reraise(type(exception), exception, tb=exc_tb, cause=cause)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 186, in reraise\n'
+INFO:root:got line from subprocess: b'    raise value.with_traceback(tb)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1182, in _execute_context\n'
+INFO:root:got line from subprocess: b'    context)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 470, in do_execute\n'
+INFO:root:got line from subprocess: b'    cursor.execute(statement, parameters)\n'
+INFO:root:got line from subprocess: b'sqlalchemy.exc.ProgrammingError: (psycopg2.ProgrammingError) syntax error at or near "medium"\n'
+INFO:root:got line from subprocess: b"LINE 1: SELECT 1 FROM pg_database WHERE datname=''medium''\n"
+INFO:root:got line from subprocess: b'                                                  ^\n'
+INFO:root:got line from subprocess: b' [SQL: "SELECT 1 FROM pg_database WHERE datname=\'\'medium\'\'"]\n'
+INFO:root:got line from subprocess: b'Spider Initialized...\n'
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 20:13:40] "GET /output?in_url=https%3A%2F%2Fmedium.com%2Fpersonal-growth%2Fthe-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 20:13:40] "GET /output?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 20:13:40] "GET /output?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 20:13:40] "GET /output?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 20:13:40] "GET /output?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 20:13:40] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kimberly/Documents/Insight/Autohighlights/Autohighlights/Flask_App/run_text_scraper.py', reloading
+INFO:root:got line from subprocess: b'2017-08-17 20:15:48 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: autoscraper)\n'
+INFO:root:got line from subprocess: b"2017-08-17 20:15:48 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'autoscraper', 'NEWSPIDER_MODULE': 'autoscraper.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['autoscraper.spiders']}\n"
+INFO:root:got line from subprocess: b'2017-08-17 20:15:49 [scrapy.middleware] INFO: Enabled extensions:\n'
+INFO:root:got line from subprocess: b"['scrapy.extensions.corestats.CoreStats',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.telnet.TelnetConsole',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.memusage.MemoryUsage',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.logstats.LogStats']\n"
+INFO:root:got line from subprocess: b'2017-08-17 20:15:49 [scrapy.middleware] INFO: Enabled downloader middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.retry.RetryMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.stats.DownloaderStats']\n"
+INFO:root:got line from subprocess: b'2017-08-17 20:15:49 [scrapy.middleware] INFO: Enabled spider middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.referer.RefererMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.depth.DepthMiddleware']\n"
+INFO:root:got line from subprocess: b'2017-08-17 20:15:49 [scrapy.middleware] INFO: Enabled item pipelines:\n'
+INFO:root:got line from subprocess: b'[]\n'
+INFO:root:got line from subprocess: b'2017-08-17 20:15:49 [scrapy.core.engine] INFO: Spider opened\n'
+INFO:root:got line from subprocess: b'2017-08-17 20:15:49 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)\n'
+INFO:root:got line from subprocess: b'2017-08-17 20:15:49 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023\n'
+INFO:root:got line from subprocess: b'2017-08-17 20:15:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/robots.txt> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-17 20:15:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/personal-growth/the-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-17 20:15:51 [scrapy.core.scraper] ERROR: Spider error processing <GET https://medium.com/personal-growth/the-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c> (referer: None)\n'
+INFO:root:got line from subprocess: b'Traceback (most recent call last):\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/anaconda3/envs/insight_env/lib/python3.6/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks\n'
+INFO:root:got line from subprocess: b'    current.result = callback(current.result, *args, **kw)\n'
+INFO:root:got line from subprocess: b'  File "/Users/kimberly/Documents/Insight/Autohighlights/Autohighlights/Flask_App/autoscraper/spiders/url_text_spider.py", line 79, in parse\n'
+INFO:root:got line from subprocess: b"    dfA.to_sql('new_searches', engine, if_exists='append')\n"
+INFO:root:got line from subprocess: b"NameError: name 'engine' is not defined\n"
+INFO:root:got line from subprocess: b'2017-08-17 20:15:51 [scrapy.core.engine] INFO: Closing spider (finished)\n'
+INFO:root:got line from subprocess: b'2017-08-17 20:15:51 [scrapy.statscollectors] INFO: Dumping Scrapy stats:\n'
+INFO:root:got line from subprocess: b"{'downloader/request_bytes': 553,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_method_count/GET': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_bytes': 30958,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_status_count/200': 2,\n"
+INFO:root:got line from subprocess: b" 'finish_reason': 'finished',\n"
+INFO:root:got line from subprocess: b" 'finish_time': datetime.datetime(2017, 8, 18, 3, 15, 51, 260970),\n"
+INFO:root:got line from subprocess: b" 'log_count/DEBUG': 3,\n"
+INFO:root:got line from subprocess: b" 'log_count/ERROR': 1,\n"
+INFO:root:got line from subprocess: b" 'log_count/INFO': 7,\n"
+INFO:root:got line from subprocess: b" 'memusage/max': 91000832,\n"
+INFO:root:got line from subprocess: b" 'memusage/startup': 90996736,\n"
+INFO:root:got line from subprocess: b" 'response_received_count': 2,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'spider_exceptions/NameError': 1,\n"
+INFO:root:got line from subprocess: b" 'start_time': datetime.datetime(2017, 8, 18, 3, 15, 49, 899061)}\n"
+INFO:root:got line from subprocess: b'2017-08-17 20:15:51 [scrapy.core.engine] INFO: Spider closed (finished)\n'
+INFO:root:got line from subprocess: b'Spider Initialized...\n'
+INFO:root:got line from subprocess: b'Got Article...\n'
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 20:15:51] "GET /output?in_url=https%3A%2F%2Fmedium.com%2Fpersonal-growth%2Fthe-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 20:15:51] "GET /output?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 20:15:51] "GET /output?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 20:15:51] "GET /output?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 20:15:52] "GET /output?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 20:15:52] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kimberly/Documents/Insight/Autohighlights/Autohighlights/Flask_App/autoscraper/spiders/url_text_spider.py', reloading
+INFO:root:got line from subprocess: b'2017-08-17 20:20:32 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: autoscraper)\n'
+INFO:root:got line from subprocess: b"2017-08-17 20:20:32 [scrapy.utils.log] INFO: Overridden settings: {'BOT_NAME': 'autoscraper', 'NEWSPIDER_MODULE': 'autoscraper.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['autoscraper.spiders']}\n"
+INFO:root:got line from subprocess: b'2017-08-17 20:20:32 [scrapy.middleware] INFO: Enabled extensions:\n'
+INFO:root:got line from subprocess: b"['scrapy.extensions.corestats.CoreStats',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.telnet.TelnetConsole',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.memusage.MemoryUsage',\n"
+INFO:root:got line from subprocess: b" 'scrapy.extensions.logstats.LogStats']\n"
+INFO:root:got line from subprocess: b'2017-08-17 20:20:33 [scrapy.middleware] INFO: Enabled downloader middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.retry.RetryMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.downloadermiddlewares.stats.DownloaderStats']\n"
+INFO:root:got line from subprocess: b'2017-08-17 20:20:33 [scrapy.middleware] INFO: Enabled spider middlewares:\n'
+INFO:root:got line from subprocess: b"['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.referer.RefererMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',\n"
+INFO:root:got line from subprocess: b" 'scrapy.spidermiddlewares.depth.DepthMiddleware']\n"
+INFO:root:got line from subprocess: b'2017-08-17 20:20:33 [scrapy.middleware] INFO: Enabled item pipelines:\n'
+INFO:root:got line from subprocess: b'[]\n'
+INFO:root:got line from subprocess: b'2017-08-17 20:20:33 [scrapy.core.engine] INFO: Spider opened\n'
+INFO:root:got line from subprocess: b'2017-08-17 20:20:33 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)\n'
+INFO:root:got line from subprocess: b'2017-08-17 20:20:33 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023\n'
+INFO:root:got line from subprocess: b'2017-08-17 20:20:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/robots.txt> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-17 20:20:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://medium.com/personal-growth/the-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c> (referer: None)\n'
+INFO:root:got line from subprocess: b'2017-08-17 20:20:37 [scrapy.core.engine] INFO: Closing spider (finished)\n'
+INFO:root:got line from subprocess: b'2017-08-17 20:20:37 [scrapy.statscollectors] INFO: Dumping Scrapy stats:\n'
+INFO:root:got line from subprocess: b"{'downloader/request_bytes': 553,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/request_method_count/GET': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_bytes': 30959,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_count': 2,\n"
+INFO:root:got line from subprocess: b" 'downloader/response_status_count/200': 2,\n"
+INFO:root:got line from subprocess: b" 'finish_reason': 'finished',\n"
+INFO:root:got line from subprocess: b" 'finish_time': datetime.datetime(2017, 8, 18, 3, 20, 37, 105630),\n"
+INFO:root:got line from subprocess: b" 'log_count/DEBUG': 3,\n"
+INFO:root:got line from subprocess: b" 'log_count/INFO': 7,\n"
+INFO:root:got line from subprocess: b" 'memusage/max': 91209728,\n"
+INFO:root:got line from subprocess: b" 'memusage/startup': 91209728,\n"
+INFO:root:got line from subprocess: b" 'response_received_count': 2,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/dequeued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued': 1,\n"
+INFO:root:got line from subprocess: b" 'scheduler/enqueued/memory': 1,\n"
+INFO:root:got line from subprocess: b" 'start_time': datetime.datetime(2017, 8, 18, 3, 20, 33, 461121)}\n"
+INFO:root:got line from subprocess: b'2017-08-17 20:20:37 [scrapy.core.engine] INFO: Spider closed (finished)\n'
+INFO:root:got line from subprocess: b'Spider Initialized...\n'
+INFO:root:got line from subprocess: b'Got Article...\n'
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 20:20:37] "GET /output?in_url=https%3A%2F%2Fmedium.com%2Fpersonal-growth%2Fthe-purpose-of-life-isnt-to-be-happy-a2b2ff16de3c HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 20:20:37] "GET /output?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 20:20:37] "GET /output?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 20:20:37] "GET /output?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 20:20:37] "GET /output?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Aug/2017 20:20:37] "GET /output?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/kimberly/Documents/Insight/Autohighlights/Autohighlights/Flask_App/autoscraper/spiders/url_text_spider.py', reloading

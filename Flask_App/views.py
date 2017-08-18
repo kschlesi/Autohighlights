@@ -7,17 +7,9 @@ import pandas as pd
 import psycopg2
 import pickle
 from Flask_App import a_Model as mod
+#from Flask_App import get_new_searches as gns
+from Flask_App import run_text_scraper as rts
 from ast import literal_eval
-from twisted.internet import reactor
-from scrapy.crawler import CrawlerProcess, CrawlerRunner
-import scrapy
-from Flask_App import get_new_searches as gns
-#from scrapy import log, signals
-from scrapy.utils.log import configure_logging
-#from dmoz.spiders.dmoz_spiders import DmozSpider
-#from dmoz.spiders.bigbasketspider import BBSpider
-from scrapy.utils.project import get_project_settings
-from scrapy.settings import Settings
 
 #user = 'ubuntu' #add your username here (same as previous postgreSQL)                      
 user = 'kimberly'
@@ -49,34 +41,43 @@ def compute_output():
     #just select the matching url from the articles table
     query = "SELECT postid, title, username, highlight, popdate, nlikes, rawtext, origdb FROM articles WHERE url='%s'" % in_url
     query_results=pd.read_sql_query(query,con)
-    q_results_dict = []
-    for i in range(0,query_results.shape[0]):
-        q_results_dict.append(dict(title=query_results.iloc[i]['title'], 
-                                  username=query_results.iloc[i]['username'], 
-                                  highlight=query_results.iloc[i]['highlight'],
-                                  popdate=query_results.iloc[i]['popdate'],
-                                  nlikes=query_results.iloc[i]['nlikes']
-                                  ))
 
-    # grab information about sentences
-    xquery = '''SELECT a.apid as apid, alength, sposition, swcount, polarity, subjectivity
-                FROM (SELECT postid as apid FROM articles WHERE url='%s' ) AS a 
-                INNER JOIN sentences_sanal ON a.apid = sentences_sanal.postid;''' % in_url 
-    Xtrain = pd.read_sql_query(xquery,con)
+    if query_results.shape[0] > 0:
+        q_results_dict = []
+        for i in range(0,query_results.shape[0]):
+            q_results_dict.append(dict(title=query_results.iloc[i]['title'], 
+                                      username=query_results.iloc[i]['username'], 
+                                      highlight=query_results.iloc[i]['highlight'],
+                                      popdate=query_results.iloc[i]['popdate'],
+                                      nlikes=query_results.iloc[i]['nlikes']
+                                      ))
+        # grab information about sentences
+        xquery = '''SELECT a.apid as apid, alength, sposition, swcount, polarity, subjectivity
+                    FROM (SELECT postid as apid FROM articles WHERE url='%s' ) AS a 
+                    INNER JOIN sentences_sanal ON a.apid = sentences_sanal.postid;''' % in_url 
+        Xtrain = pd.read_sql_query(xquery,con)
 
 # if not in table, auto-scrape and save info
+    else:
     
     # start scrapy spider 'url_text_spider' (puts info in new_searches table in medium db)
-
+        r = rts.run_text_scraper(in_url=in_url,user=user)
 
     # then search db, process text, calculate sentence information, construct Xtrain
-    Xtrain, title, username = gns.parse_new_search_data(in_url)
+        #Xtrain, title, username = gns.parse_new_search_data(in_url)
+        Xtrain = []
+        title = []
+        username = []
 
 # apply model, get htext....
     dfHrecList = mod.apply_model(Xtrain=Xtrain,model=model,ntop=ntop)
 
     # grab text of highlight sentences
-    htext_dict = mod.get_htext(recdflist=dfHrecList,art_info=query_results[['postid','rawtext','origdb']])
+    if True: 
+        art_info = query_results[['postid','rawtext','origdb']]
+    else:
+        art_info = 1;
+    htext_dict = mod.get_htext(recdflist=dfHrecList,art_info=art_info)
 
 # render output
     return render_template("output.html", q_results_dict = q_results_dict, htext_dict = htext_dict, in_url=in_url)

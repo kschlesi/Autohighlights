@@ -53,11 +53,10 @@ def apply_model(Xtrain = 'default', model= 'rfm', thresh = None, ntop=None):
 
 def get_htext(recdflist=[],art_info=[]):
     '''taking highlightrecs and article info, returns htext dictionary of original sentences'''
+    '''art_info is a df with three cols: ['postid', 'rawtext', 'origdb'] and only one row'''
 
-    sText = NLP.NLProcessor(list(art_info.rawtext))
-    sText.process_text(break_on='.',init_split_on='database',
-                       origdb=art_info.origdb,keep_raw=True)
-    sents = sText.get_text()
+    # gets unprocessed sentences for display
+    sents = text_sentences(list(art_info.rawtext), origdb=3, keep_raw=True, to_stem=False)
 
     # grab position
     # recdflist is a list of three dataframes, one per highlight
@@ -67,6 +66,16 @@ def get_htext(recdflist=[],art_info=[]):
     #htext = [sents[0][spos] for spos in recdflist.sposition]
     htext_dict = dict(enumerate(htext))
     return htext_dict
+
+def text_sentences(rawtext, origdb=3, keep_raw=True, to_stem=False):
+    '''takes raw text and uses NLProcessor to break into sentences.
+    can keep sentences raw for display or process and (optionally) stem'''
+    sText = NLP.NLProcessor(rawtext)
+    sText.process_text(break_on='.',init_split_on='database',
+                       origdb=origdb,keep_raw=keep_raw,to_stem=to_stem)
+    sents = sText.get_text()
+
+    return sents
 
 def find_connected_subset(inlist,start_value):
     ix = inlist.index(start_value)

@@ -5,7 +5,6 @@ from textblob import textblob
 
 def parse_new_search_data(in_url):
 	'''pulls records for given url from new search database, parses text, computes and returns Xtrain'''
-
 	# search for and pull text, title, author
 
 	# parse text into sentences (break on '/n')

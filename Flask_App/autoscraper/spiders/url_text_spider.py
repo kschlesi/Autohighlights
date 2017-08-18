@@ -7,25 +7,26 @@ import psycopg2
 import pandas as pd
 
 class URLTextSpider(scrapy.Spider):
-    name = "url_text_spider"
+    name = "URLTextSpider"
 
     def __init__(self, in_url=None, user=None, db=None):
         scrapy.Spider.__init__(self)
+        print('Spider Initialized...')
         self.the_url = in_url
         self.user = user
         self.db = db
 
         # set whether article is from medium.com
-        self.isMedium = False
+        self.isMedium = True
 
         # set whether db should be connected to...
         if user is None or db is None:
             self.engine = None
         else:
-            self.engine = create_engine('postgres://%s@localhost/%s'%(username,dbname))
+            self.engine = create_engine('postgres://%s@localhost/%s'%(user,db))
             ## create a database (if it doesn't exist)
-            if not database_exists(engine.url):
-                create_database(engine.url)
+            if not database_exists(self.engine.url):
+                create_database(self.engine.url)
 
     def start_requests(self):
         urls = [
@@ -36,6 +37,7 @@ class URLTextSpider(scrapy.Spider):
 
     def parse(self, response):
         # if article is from Medium...
+        print('Got Article...')
         if self.isMedium:
             # get text
             text = "/n".join(response.xpath('//p[@class]/text()').extract())
@@ -73,6 +75,6 @@ class URLTextSpider(scrapy.Spider):
                     text + '\n')
 
         # save info to database
-        if self.engine not None:
-            dfA.to_sql('new_searches', engine, if_exists='append')
+        if self.engine is not None:
+            dfA.to_sql('new_searches', self.engine, if_exists='append')
 
