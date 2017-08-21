@@ -24,20 +24,29 @@ def parse_new_search_data(in_url,con):
     sents_nostem = sents_nostem[0]
 
     # compute alength, sposition, swcount, sentiment, polarity for each sentence
-    print(sents_stem)
-    print(len(sents_stem))
-    print(sents_nostem)
-    print(len(sents_nostem))
-
     alen = [len(sents_stem)]*len(sents_stem)
     spos = [i for i in range(len(sents_stem))]
     swcount = [len(s) for s in sents_stem]
+    polarity, subjectivity = calculate_sentiment(sents_nostem)
     print(alen)
     print(spos)
     print(swcount)
+    print(polarity)
+    print(subjectivity)
 
     # return Xtrain, title, author
     Xtrain = pd.DataFrame[sents_stem]
     title = title[0]
     username = username[0]
     return Xtrain, title, username
+
+def calculate_sentiment(in_sents):
+    '''input is list of sentences. sentence is list of words. They are processed but not stemmed...'''
+    blobs = [TextBlob(' '.join(s)) for s in in_sents]
+
+    polarity = []
+    subjectivity = []
+    for sx,s in enumerate(blobs):
+        stmt = s.sentiment
+        polarity.append(stmt[0])
+        subjectivity.append(stmt[1])        
