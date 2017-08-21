@@ -28,17 +28,25 @@ def parse_new_search_data(in_url,con):
     spos = [i for i in range(len(sents_stem))]
     swcount = [len(s) for s in sents_stem]
     polarity, subjectivity = calculate_sentiment(sents_nostem)
-    print(alen)
-    print(spos)
-    print(swcount)
-    print(polarity)
-    print(subjectivity)
+    # print(alen)
+    # print(spos)
+    # print(swcount)
+    # print(polarity)
+    # print(subjectivity)
 
     # return Xtrain, title, author
-    Xtrain = pd.DataFrame[sents_stem]
-    title = title[0]
-    username = username[0]
-    return Xtrain, title, username
+    Xtrain = pd.DataFrame(sents_stem)
+    Xtrain['alen'] = alen
+    Xtrain['sposition'] = spos
+    Xtrain['swcount'] = swcount
+    Xtrain['polarity'] = polarity
+    Xtrain['subjectivity'] = subjectivity
+    Xtrain = Xtrain[[0,'alen','sposition','swcount','polarity','subjectivity']]
+    Xtrain.columns = ['apid','alen','sposition','swcount','polarity','subjectivity']
+    print(Xtrain)
+    title = list(scrapedDf.title)[0]
+    username = list(scrapedDf.username)[0]
+    return Xtrain, title, username, scrapedDf[['url','rawtext']]
 
 def calculate_sentiment(in_sents):
     '''input is list of sentences. sentence is list of words. They are processed but not stemmed...'''
@@ -49,4 +57,6 @@ def calculate_sentiment(in_sents):
     for sx,s in enumerate(blobs):
         stmt = s.sentiment
         polarity.append(stmt[0])
-        subjectivity.append(stmt[1])        
+        subjectivity.append(stmt[1])    
+
+    return polarity, subjectivity    

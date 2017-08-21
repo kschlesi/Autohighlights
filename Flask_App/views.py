@@ -64,16 +64,24 @@ def compute_output():
         r = rts.run_text_scraper(in_url=in_url,user=user)
 
     # then search db, process text, calculate sentence information, construct Xtrain
-        Xtrain, title, username = gns.parse_new_search_data(in_url,con)
+        Xtrain, title, username, art_info = gns.parse_new_search_data(in_url,con)
 
 # apply model, get htext....
     dfHrecList = mod.apply_model(Xtrain=Xtrain,model=model,ntop=ntop)
 
     # grab text of highlight sentences
-    if True: 
+    '''art_info is a df with three cols: ['postid', 'rawtext', 'origdb'] and only one row'''
+    if query_results.shape[0] > 0: 
         art_info = query_results[['postid','rawtext','origdb']]
     else:
-        art_info = 1;
+        art_info['origdb'] = 3
+        q_results_dict = []
+        q_results_dict.append(dict(title=title, 
+                                      username=username, 
+                                      highlight=None,
+                                      popdate=None,
+                                      nlikes=None
+                                      ))
     htext_dict = mod.get_htext(recdflist=dfHrecList,art_info=art_info)
 
 # render output

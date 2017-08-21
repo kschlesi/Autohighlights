@@ -56,7 +56,7 @@ def get_htext(recdflist=[],art_info=[]):
     '''art_info is a df with three cols: ['postid', 'rawtext', 'origdb'] and only one row'''
 
     # gets unprocessed sentences for display
-    sents = text_sentences(list(art_info.rawtext), origdb=3, keep_raw=True, to_stem=False)
+    sents = text_sentences(list(art_info.rawtext), origdb=list(art_info.origdb), keep_raw=True, to_stem=False)
 
     # grab position
     # recdflist is a list of three dataframes, one per highlight
@@ -67,7 +67,7 @@ def get_htext(recdflist=[],art_info=[]):
     htext_dict = dict(enumerate(htext))
     return htext_dict
 
-def text_sentences(rawtext, origdb=3, keep_raw=True, to_stem=False):
+def text_sentences(rawtext, origdb=[3], keep_raw=True, to_stem=False):
     '''takes raw text and uses NLProcessor to break into sentences.
     can keep sentences raw for display or process and (optionally) stem'''
     sText = NLP.NLProcessor(rawtext)
